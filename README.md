@@ -2,6 +2,14 @@
 
 This is a simple wrapper to use [SweetAlert](https://limonte.github.io/sweetalert2/) in Angular projects, it works with `angular-cli` also
 
+### Forked + Updated...
+
+This project was forked from [angular-sweetalert-service](https://www.npmjs.com/package/angular-sweetalert-service) originally by [Juan Manuel Alberro](https://www.npmjs.com/~alberro)
+
+i just Forked it, made a few changes (no global sweetalert) and packaged using ng-packagr.
+
+This package is used internally as a stepping stone between the older version and switching to the [Official SweetAlert2 Angular Integration](https://github.com/sweetalert2/ngx-sweetalert2)... I would recommend using that if you are in a fresh project.
+
 ### Install
 
 `npm install --save angular-sweetalert-service`
