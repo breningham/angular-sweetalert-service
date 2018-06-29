@@ -12,11 +12,11 @@ This package is used internally as a stepping stone between the older version an
 
 ### Install
 
-`npm install --save angular-sweetalert-service`
+`npm install --save ng-sweetalert-service`
 
 or if you prefer Yarn
 
-`yarn add angular-sweetalert-service`
+`yarn add ng-sweetalert-service`
 
 ### Include in your app
 
@@ -24,7 +24,7 @@ In your `app.module` just include the service
 
 ```js
 ...
-import { SweetAlertService } from 'angular-sweetalert-service';
+import { SweetAlertModule } from 'ng-sweetalert-service';
 ...
 ```
 
@@ -37,10 +37,10 @@ Then add the service as a provider
   ],
   imports: [
     ...
+    SweetAlertModule
+    ...
   ],
   providers: [
-    ...
-    SweetAlertService,
     ...
   ],
   bootstrap: [
@@ -55,7 +55,7 @@ Now you have the service available across the application. Now you need to call 
 // myComponent.ts
 
 ...
-import { SweetAlertService } from 'angular-sweetalert';
+import { SweetAlertService } from 'ng-sweetalert-service';
 
 @Component({
   selector: 'app-foobar',
